@@ -1,0 +1,60 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import './variables.scss';
+@import './components/Header.scss';
+@import './components/LikeButton.scss';
+@import './components/Wishlist.scss';
+@import './components/WishlistItem.scss';
+@import './components/Sale.scss';
+@import './pages/Sales.scss';
+
+
+body {
+    background: #ffffff;
+}
+
+.classic {
+    font-family: 'Rokkitt', $font-family-monospace;
+}
+
+.logo {
+    color: #ffffff;
+
+    > img {
+        width: 119px;
+    }
+
+    &:hover {
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
+
+.navbar {
+    .navbar-toggler {
+        border: none;
+        padding: 0;
+
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+}
+
+
+.container, .container-fluid {
+    &.no-gutters {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.row.narrow-gutters {
+    margin-left: - $grid-gutter-width / 4;
+    margin-right: - $grid-gutter-width / 4;
+
+    > [class^="col"], > [class*=" col-"] {
+        padding-left: $grid-gutter-width / 4;
+        padding-right: $grid-gutter-width / 4;
+    }
+}

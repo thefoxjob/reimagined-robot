@@ -1,0 +1,12 @@
+.component.header {
+    top: 0;
+    z-index: $zindex-fixed;
+    background: #222222;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+
+    & + .body {
+        margin-top: 85px;
+    }
+}

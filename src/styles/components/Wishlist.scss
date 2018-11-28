@@ -1,0 +1,45 @@
+.component.wishlist {
+    .btn-toggle {
+        color: #ffffff;
+        background: transparent;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+
+        .fa-heart {
+            color: #ffffff;
+            font-size: 1.25rem;
+        }
+
+        .text {
+            font-size: 9px;
+            color: #ffffff;
+            margin-top: 5px;
+            display: block;
+        }
+
+        &:hover {
+            color: #ffffff;
+
+            .text {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .dropdown {
+        width: 400px;
+        max-height: 500px;
+        overflow: scroll;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+        position: absolute;
+        left: 0;
+        background: #ffffff;
+        transform: translateX(-330px);
+        display: none;
+
+        &.show {
+            display: block;
+        }
+    }
+}
